@@ -2,8 +2,8 @@ name: Auto Commit
 
 on:
   schedule:
-    # Runs 4 times a day (03:00, 09:00, 15:00, 21:00 UTC) for natural variation
-    - cron: '0 3,9,15,21 * * *'
+    # Runs every 3 hours (8 times a day) for maximum contribution activity
+    - cron: '0 */3 * * *'
   workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
 
 jobs:
@@ -17,18 +17,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Randomized Daily Commit
+      - name: High-Activity Daily Commits
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Decide randomly how many commits to make during this run (0 to 3)
-          NUM_COMMITS=$((RANDOM % 4))
-          
-          if [ $NUM_COMMITS -eq 0 ]; then
-            echo "Randomizer rolled 0: skipping commit this run to keep activity looking natural."
-            exit 0
-          fi
+          # Generates between 1 and 5 commits per run to produce vibrant green squares
+          NUM_COMMITS=$(( (RANDOM % 5) + 1 ))
 
           MESSAGES=(
             "chore: automated log update"
@@ -37,6 +32,8 @@ jobs:
             "refactor: maintenance tweaks"
             "fix: minor system update"
             "chore: daily activity log"
+            "feat: update activity statistics"
+            "perf: optimize workflow logs"
           )
 
           echo "Making $NUM_COMMITS randomized commit(s)..."
@@ -55,3 +52,4 @@ jobs:
           done
 
           git push
+
