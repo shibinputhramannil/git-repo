@@ -1,0 +1,57 @@
+name: Auto Commit
+
+on:
+  schedule:
+    # Runs 4 times a day (03:00, 09:00, 15:00, 21:00 UTC) for natural variation
+    - cron: '0 3,9,15,21 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Randomized Daily Commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Decide randomly how many commits to make during this run (0 to 3)
+          NUM_COMMITS=$((RANDOM % 4))
+          
+          if [ $NUM_COMMITS -eq 0 ]; then
+            echo "Randomizer rolled 0: skipping commit this run to keep activity looking natural."
+            exit 0
+          fi
+
+          MESSAGES=(
+            "chore: automated log update"
+            "docs: update contribution metrics"
+            "style: formatting code and logs"
+            "refactor: maintenance tweaks"
+            "fix: minor system update"
+            "chore: daily activity log"
+          )
+
+          echo "Making $NUM_COMMITS randomized commit(s)..."
+
+          for (( i=1; i<=NUM_COMMITS; i++ )); do
+            # Pick a random commit message
+            RAND_INDEX=$((RANDOM % ${#MESSAGES[@]}))
+            RANDOM_MSG="${MESSAGES[$RAND_INDEX]}"
+            
+            # Append current timestamp to commit-log.txt
+            echo "Activity logged at $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> commit-log.txt
+            
+            git add commit-log.txt
+            git commit -m "$RANDOM_MSG" || true
+            sleep 2
+          done
+
+          git push
