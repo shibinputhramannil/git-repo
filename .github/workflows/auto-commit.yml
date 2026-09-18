@@ -22,8 +22,8 @@ jobs:
           git config --global user.name "Sibin P"
           git config --global user.email "putharamannilshibin@gmail.com"
           
-          # Generates between 1 and 20 commits per run to produce vibrant green squares
-          NUM_COMMITS=$(( (RANDOM % 20) + 1 ))
+          # Generates between 1 and 50 commits per run to produce vibrant green squares
+          NUM_COMMITS=$(( (RANDOM % 50) + 1 ))
 
           MESSAGES=(
             "chore: automated log update"
@@ -48,7 +48,7 @@ jobs:
             
             git add commit-log.txt
             git commit -m "$RANDOM_MSG" || true
-            sleep 2
+            sleep 1
           done
 
           git push

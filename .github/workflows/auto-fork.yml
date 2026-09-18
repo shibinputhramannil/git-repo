@@ -1,0 +1,68 @@
+name: Auto Fork
+
+on:
+  schedule:
+    # Runs twice a day (every 12 hours)
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from Actions tab
+
+jobs:
+  auto-fork:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Fork Trending Repositories
+        env:
+          AUTO_FORK_PAT: ${{ secrets.AUTO_FORK_PAT }}
+        run: |
+          python3 -c "
+          import os, random, sys, json, urllib.request, urllib.error
+
+          pat = os.environ.get('AUTO_FORK_PAT', '').strip()
+          if not pat:
+              print('::warning::AUTO_FORK_PAT secret is not set.')
+              print('To enable auto-forking, create a GitHub Personal Access Token (classic) with public_repo scope, and add it as AUTO_FORK_PAT under Repository Settings > Secrets and variables > Actions.')
+              sys.exit(0)
+
+          keywords = ['awesome', 'algorithms', 'web-development', 'python', 'react', 'machine-learning', 'tools', 'roadmap', 'cheatsheet', 'interview']
+          keyword = random.choice(keywords)
+          page = random.randint(1, 3)
+
+          search_url = f'https://api.github.com/search/repositories?q={keyword}+stars:%3E1000&sort=stars&order=desc&per_page=30&page={page}'
+          headers = {
+              'Accept': 'application/vnd.github.v3+json',
+              'Authorization': f'token {pat}',
+              'User-Agent': 'AutoForkBot'
+          }
+
+          try:
+              req = urllib.request.Request(search_url, headers=headers)
+              with urllib.request.urlopen(req) as response:
+                  data = json.loads(response.read().decode())
+                  items = data.get('items', [])
+          except Exception as e:
+              print(f'Error searching repositories: {e}')
+              sys.exit(0)
+
+          if not items:
+              print('No repositories found.')
+              sys.exit(0)
+
+          random.shuffle(items)
+          forked_count = 0
+          for repo in items:
+              if forked_count >= 2:
+                  break
+              full_name = repo.get('full_name')
+              fork_url = f'https://api.github.com/repos/{full_name}/forks'
+              fork_req = urllib.request.Request(fork_url, headers=headers, data=b\"{}\", method='POST')
+              try:
+                  with urllib.request.urlopen(fork_req) as resp:
+                      print(f'Successfully forked: {full_name}')
+                      forked_count += 1
+              except urllib.error.HTTPError as e:
+                  print(f'Skipping {full_name} ({e.code}): Already forked or restricted.')
+              except Exception as e:
+                  print(f'Error forking {full_name}: {e}')
+
+          print(f'Total forks initiated in this run: {forked_count}')
+          "
