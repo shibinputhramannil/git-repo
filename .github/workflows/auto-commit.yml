@@ -22,8 +22,8 @@ jobs:
           git config --global user.name "Sibin P"
           git config --global user.email "putharamannilshibin@gmail.com"
           
-          # Generates between 1 and 5 commits per run to produce vibrant green squares
-          NUM_COMMITS=$(( (RANDOM % 5) + 1 ))
+          # Generates between 1 and 20 commits per run to produce vibrant green squares
+          NUM_COMMITS=$(( (RANDOM % 20) + 1 ))
 
           MESSAGES=(
             "chore: automated log update"
