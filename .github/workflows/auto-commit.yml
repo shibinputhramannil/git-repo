@@ -19,8 +19,8 @@ jobs:
 
       - name: High-Activity Daily Commits
         run: |
-          git config --global user.name "TheCyperpunk"
-          git config --global user.email "197233485+TheCyperpunk@users.noreply.github.com"
+          git config --global user.name "Sibin P"
+          git config --global user.email "putharamannilshibin@gmail.com"
           
           # Generates between 1 and 5 commits per run to produce vibrant green squares
           NUM_COMMITS=$(( (RANDOM % 5) + 1 ))
