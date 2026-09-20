@@ -1,17 +1,15 @@
-# Pro GitHub Activity & Automation Suite 🚀
+# Hi there, I'm Shibin P 👋
+### 🐍 Python Full Stack Developer
 
 <p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/shibinputhramannil/git-repo/auto-commit.yml?branch=main&label=Auto%20Commit&style=for-the-badge&logo=githubactions&logoColor=white" alt="Auto Commit Status" />
-  <img src="https://img.shields.io/github/actions/workflow/status/shibinputhramannil/git-repo/snake.yml?branch=main&label=Snake%20Animation&style=for-the-badge&logo=githubactions&logoColor=white" alt="Snake Status" />
-  <img src="https://img.shields.io/github/license/shibinputhramannil/git-repo?style=for-the-badge&color=blue" alt="License" />
-  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge" alt="Maintained" />
+  <img src="https://komarev.com/ghpvc/?username=shibinputhramannil&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Open%20To-Collaborations-brightgreen?style=flat" alt="Open to collaborations" />
+  <img src="https://img.shields.io/badge/Focus-Python%20Full%20Stack-blue?style=flat&logo=python" alt="Focus" />
 </p>
 
 ---
 
-## 🐍 GitHub Contribution Graph Eating Snake
-An automated bot that generates an animated snake playing in your GitHub contribution squares:
-
+### 🐍 GitHub Contribution Grid (Snake Animation)
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shibinputhramannil/git-repo/output/github-contribution-grid-snake-dark.svg" />
@@ -22,33 +20,59 @@ An automated bot that generates an animated snake playing in your GitHub contrib
 
 ---
 
-## 📊 Live GitHub Profile Analytics
+### 📊 GitHub Activity & Streak Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shibinputhramannil&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shibinputhramannil&theme=radical&hide_border=true" alt="GitHub Streak" width="48%" />
+  <img src="https://streak-stats.demolab.com/?user=shibinputhramannil&theme=radical&hide_border=true" alt="GitHub Streak" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shibinputhramannil&theme=radical" alt="GitHub Stats" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shibinputhramannil&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shibinputhramannil&theme=react-dark&hide_border=true" alt="Activity Graph" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shibinputhramannil&theme=radical" alt="Profile Details" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shibinputhramannil&theme=radical" alt="Languages" width="49%" />
 </p>
 
 ---
 
-## ⚙️ Automated Features Included
+### 🛠️ Python Full Stack Tech Stack
 
-| Workflow | Schedule | Description |
-|---|---|---|
-| **Auto Commit Bot** | Every 3 Hours (`0 */3 * * *`) | Automatically generates up to 50 randomized daily commits to keep contribution squares vibrant green. |
-| **Snake Animation Bot** | Every 12 Hours (`0 */12 * * *`) | Analyzes your contribution graph and generates the animated snake game SVG deployed directly to the `output` branch. |
-| **Auto Fork Bot** | Twice Daily (`0 */12 * * *`) | Queries trending open-source repositories and forks them to your account. |
+#### 🐍 Backend & Python
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=fastapi&logoColor=white" />
+</p>
 
----
+#### 💻 Frontend Development
+<p align="left">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
 
-## 💡 How to Show This on Your Main GitHub Profile
-To make this appear directly on your main GitHub profile page (`https://github.com/shibinputhramannil`):
-1. Create a public repository named exactly: **`shibinputhramannil`**
-2. Initialize it with a `README.md`.
-3. Copy the Snake and Stats markdown code above into that repository's `README.md`.
-4. Anyone visiting your profile will instantly see your animated contribution snake, streak stats, and developer charts!
+#### 🗄️ Databases & Caching
+<p align="left">
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+</p>
+
+#### 🚀 DevOps, Cloud & Tools
+<p align="left">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+</p>
