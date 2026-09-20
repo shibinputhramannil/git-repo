@@ -2,8 +2,8 @@ name: Auto Commit
 
 on:
   schedule:
-    # Runs every 3 hours (8 times a day) for maximum contribution activity
-    - cron: '0 */3 * * *'
+    # Runs every hour (24 times a day) for maximum contribution velocity
+    - cron: '0 * * * *'
   workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
 
 jobs:
@@ -22,8 +22,8 @@ jobs:
           git config --global user.name "Sibin P"
           git config --global user.email "putharamannilshibin@gmail.com"
           
-          # Generates between 1 and 50 commits per run to produce vibrant green squares
-          NUM_COMMITS=$(( (RANDOM % 50) + 1 ))
+          # Generates between 20 and 50 commits per run for rapid contribution boost
+          NUM_COMMITS=$(( (RANDOM % 31) + 20 ))
 
           MESSAGES=(
             "chore: automated log update"
