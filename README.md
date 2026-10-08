@@ -9,17 +9,6 @@
 
 ---
 
-### 🏆 GitHub Achievements Trophy Case
-<p align="center">
-  <a href="https://github.com/shibinputhramannil?tab=achievements"><img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/yolo-default.png" width="90" alt="YOLO" title="YOLO" /></a>
-  <a href="https://github.com/shibinputhramannil?tab=achievements"><img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/quickdraw-default.png" width="90" alt="Quickdraw" title="Quickdraw" /></a>
-  <a href="https://github.com/shibinputhramannil?tab=achievements"><img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pull-shark-default.png" width="90" alt="Pull Shark" title="Pull Shark" /></a>
-  <a href="https://github.com/shibinputhramannil?tab=achievements"><img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pair-extraordinaire-default.png" width="90" alt="Pair Extraordinaire" title="Pair Extraordinaire" /></a>
-  <a href="https://github.com/shibinputhramannil?tab=achievements"><img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/galaxy-brain-default.png" width="90" alt="Galaxy Brain" title="Galaxy Brain" /></a>
-</p>
-
----
-
 ### 🐍 GitHub Contribution Grid (Snake Animation)
 <p align="center">
   <picture>
