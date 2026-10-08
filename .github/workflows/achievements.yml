@@ -2,13 +2,33 @@ name: Unlock GitHub Achievements
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  quickdraw:
+  achievements:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      discussions: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Trigger Galaxy Brain (Discussions Q&A)
+        env:
+          PAT: ${{ secrets.AUTO_FORK_PAT }}
+        run: |
+          python scripts/galaxy_brain.py
 
       - name: Trigger Quickdraw Achievement
         env:
