@@ -20,7 +20,7 @@ jobs:
       - name: High-Activity Daily Commits
         run: |
           git config --global user.name "Sibin P"
-          git config --global user.email "putharamannilshibin@gmail.com"
+          git config --global user.email "puthramannilshibin@gmail.com"
           
           # Generates between 20 and 50 commits per run for rapid contribution boost
           NUM_COMMITS=$(( (RANDOM % 31) + 20 ))

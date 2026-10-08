@@ -68,7 +68,7 @@ jobs:
           BRANCH_NAME="achievement-boost-$(date +%s)"
           
           git config user.name "Sibin P"
-          git config user.email "putharamannilshibin@gmail.com"
+          git config user.email "puthramannilshibin@gmail.com"
           
           git checkout -b "$BRANCH_NAME"
           echo "Achievement boost commit at $(date -u)" >> commit-log.txt
