@@ -2,9 +2,9 @@
 ### 🐍 Python Full Stack Developer
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=shibinputhramannil&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Open%20To-Collaborations-brightgreen?style=flat" alt="Open to collaborations" />
-  <img src="https://img.shields.io/badge/Focus-Python%20Full%20Stack-blue?style=flat&logo=python" alt="Focus" />
+  <img src="https://img.shields.io/badge/Developer-Python%20Full%20Stack-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Full Stack" />
+  <img src="https://img.shields.io/badge/Open%20To-Collaborations-brightgreen?style=for-the-badge" alt="Open to collaborations" />
+  <img src="https://img.shields.io/badge/Status-Actively%20Building-blue?style=for-the-badge&logo=github&logoColor=white" alt="Status" />
 </p>
 
 ---
