@@ -9,6 +9,23 @@
 
 ---
 
+### 🏆 Developer Trophies & Milestones (11 Badges)
+<p align="center">
+  <img src="https://img.shields.io/badge/🏆_Commits-4%2C300%2B_Rank_SSS-gold?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏆_Contributions-1%2C200%2B_Rank_SSS-orange?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏆_Pull_Requests-50%2B_Rank_S-blueviolet?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏆_Streak-23_Days_Rank_S-red?style=for-the-badge&logo=hotjar&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏆_Repositories-95%2B_Rank_A-blue?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏆_Specialization-Python_Full_Stack-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/⚡_Achievement-Quickdraw_Unlocked-FFD700?style=for-the-badge&logo=github&logoColor=black" />
+  <img src="https://img.shields.io/badge/🤠_Achievement-YOLO_Unlocked-FF69B4?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/🦈_Achievement-Pull_Shark_Tier_II-00CED1?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/👯_Achievement-Pair_Extraordinaire-9370DB?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/🧠_Achievement-Galaxy_Brain-8A2BE2?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+---
+
 ### 🐍 GitHub Contribution Grid (Snake Animation)
 <p align="center">
   <picture>
